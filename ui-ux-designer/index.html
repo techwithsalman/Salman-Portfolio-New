@@ -12,6 +12,7 @@
 
 <meta name="description" content="User flows, wireframes, prototypes, dashboards and polished responsive interfaces designed in Figma by Salman Khan." />
 <meta name="theme-color" content="#1A1818" />
+<script src="projects-data.js"></script>
 <script>if(/[?&]embed\b/.test(location.search))document.documentElement.classList.add('embed');try{if(localStorage.getItem('theme-mode')==='dark')document.documentElement.dataset.mode='dark'}catch(e){}</script>
 <style>
 :root{--bg:#E8E4E0;--fg:#1A1818;--fg-rgb:26,24,24;--card:#F3F0EC;--card-line:rgba(26,24,24,.08);--accent:#6B4F4F;--room:#FBFAF8;
@@ -41,6 +42,26 @@ html.embed.out .glow{opacity:1;visibility:visible;transition:opacity .4s ease}
 h1{font-size:clamp(44px,7vw,84px);font-weight:600;letter-spacing:-.025em;line-height:.95}
 .intro p{max-width:52ch;font-size:17px;line-height:1.55;color:rgba(var(--fg-rgb),.68)}
 .intro .count{display:block;margin-top:14px;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+
+
+/* ---------- Load More Projects Button ---------- */
+.load-more-wrap{display:flex;justify-content:center;align-items:center;padding:1.5rem 0 6rem;position:relative;z-index:10}
+.load-more-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  height:54px;padding:0 36px;border-radius:999px;border:1px solid rgba(var(--fg-rgb),.16);
+  background:var(--fg);color:var(--bg);font-family:var(--font);font-size:15px;font-weight:600;
+  cursor:pointer;transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s ease,background .25s ease,opacity .3s ease;
+  box-shadow:0 10px 25px -10px rgba(0,0,0,.3);
+}
+.load-more-btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px -10px rgba(0,0,0,.4)}
+.load-more-btn:active{transform:translateY(0)}
+.load-more-btn:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.load-more-btn svg{width:18px;height:18px;transition:transform .3s ease}
+.load-more-btn:hover svg{transform:translateY(2px)}
+@media (max-width:639.98px){
+  .load-more-wrap{padding:1rem 0 4.5rem}
+  .load-more-btn{height:48px;padding:0 26px;font-size:14px}
+}
 
 /* ---------- stacked project cards ---------- */
 .stack{position:relative;padding-bottom:12vh}
@@ -365,7 +386,7 @@ html[data-mode="dark"] .skel::after{background-image:linear-gradient(100deg,#231
       </div>
       <div class="stage" aria-hidden="true">
         <div class="mon"><div class="mon__body"><div class="mon__screen vid" style="--ar:1280 / 800">
-          <img class="page" src="haymaker-hunting.webp" alt="Haymaker Hunting — Website UI Design" decoding="async" loading="eager" style="width:100%;height:100%;object-fit:cover"/>
+          <img class="page" src="haymaker-hunting.webp" alt="Haymaker Hunting — Website UI Design" decoding="async" loading="eager" style="width:100%;height:auto"/>
         </div></div><div class="mon__neck"></div><div class="mon__foot"></div></div>
       </div>
     </div>
@@ -411,7 +432,7 @@ html[data-mode="dark"] .skel::after{background-image:linear-gradient(100deg,#231
       </div>
       <div class="stage" aria-hidden="true">
         <div class="mon"><div class="mon__body"><div class="mon__screen vid" style="--ar:1280 / 800">
-          <img class="page" src="food-website.webp" alt="Food Website — Modern Food UI Design" decoding="async" loading="lazy" style="width:100%;height:100%;object-fit:cover"/>
+          <img class="page" src="food-website.webp" alt="Food Website — Modern Food UI Design" decoding="async" loading="lazy" style="width:100%;height:auto"/>
         </div></div><div class="mon__neck"></div><div class="mon__foot"></div></div>
       </div>
     </div>
@@ -440,7 +461,105 @@ html[data-mode="dark"] .skel::after{background-image:linear-gradient(100deg,#231
     </div>
     <div class="card__dim"></div>
   </article>
+  <article class="card" style="--i:4" aria-labelledby="p4">
+    <div class="card__in">
+      <div class="card__info">
+        <p class="card__meta"><span class="no">05</span><i></i><span>UI/UX Design / Digital Platform</span></p>
+        <h2 id="p4">Duuram — Digital Platform UI Concept</h2>
+        <p class="sub">Digital Platform UI Concept</p>
+        <p class="desc">A structured digital platform interface concept designed with clean content layout, intuitive user flow, and modern visual hierarchy for seamless user engagement.</p>
+        <ul class="tags">
+          <li>UI/UX Design</li>
+          <li>Digital Platform</li>
+          <li>Web Design</li>
+          <li>Interface Design</li>
+        </ul>
+        <a class="live" href="https://www.behance.net/gallery/184634617/Duuram" target="_blank" rel="noopener noreferrer">View Case Study <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="mon"><div class="mon__body"><div class="mon__screen vid" style="--ar:1280 / 800">
+          <img class="page" src="duuram.webp" alt="Duuram — Digital Platform UI Concept" decoding="async" loading="lazy" style="width:100%;height:auto"/>
+        </div></div><div class="mon__neck"></div><div class="mon__foot"></div></div>
+      </div>
+    </div>
+    <div class="card__dim"></div>
+  </article>
+  <article class="card flip" style="--i:5" aria-labelledby="p5">
+    <div class="card__in">
+      <div class="card__info">
+        <p class="card__meta"><span class="no">06</span><i></i><span>Web Design / Portfolio UI</span></p>
+        <h2 id="p5">Ilce Romero — Personal Brand &amp; Portfolio UI</h2>
+        <p class="sub">Personal Brand &amp; Portfolio UI</p>
+        <p class="desc">A personalized brand and portfolio website design focused on visual identity presentation, editorial layout structure, and responsive digital storytelling.</p>
+        <ul class="tags">
+          <li>Web Design</li>
+          <li>UI/UX</li>
+          <li>Portfolio UI</li>
+          <li>Visual Identity</li>
+        </ul>
+        <a class="live" href="https://www.behance.net/gallery/184550265/Ilce-Romero" target="_blank" rel="noopener noreferrer">View Case Study <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="mon"><div class="mon__body"><div class="mon__screen vid" style="--ar:1280 / 800">
+          <img class="page" src="ilce-romero.webp" alt="Ilce Romero — Personal Brand &amp; Portfolio UI" decoding="async" loading="lazy" style="width:100%;height:auto"/>
+        </div></div><div class="mon__neck"></div><div class="mon__foot"></div></div>
+      </div>
+    </div>
+    <div class="card__dim"></div>
+  </article>
+  <article class="card" style="--i:6" aria-labelledby="p6">
+    <div class="card__in">
+      <div class="card__info">
+        <p class="card__meta"><span class="no">07</span><i></i><span>Web Design / Media UI</span></p>
+        <h2 id="p6">Drone Videos — Media &amp; Videography Website UI</h2>
+        <p class="sub">Media &amp; Videography Website UI</p>
+        <p class="desc">An immersive videography and media showcase interface featuring dynamic video grids, dark-themed visual contrast, and high-impact visual storytelling.</p>
+        <ul class="tags">
+          <li>Web Design</li>
+          <li>UI/UX</li>
+          <li>Media Showcase</li>
+          <li>Video Platform</li>
+        </ul>
+        <a class="live" href="https://www.behance.net/gallery/184551111/Drone-Videos" target="_blank" rel="noopener noreferrer">View Case Study <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="mon"><div class="mon__body"><div class="mon__screen vid" style="--ar:1280 / 800">
+          <img class="page" src="drone-videos.webp" alt="Drone Videos — Media &amp; Videography Website UI" decoding="async" loading="lazy" style="width:100%;height:auto"/>
+        </div></div><div class="mon__neck"></div><div class="mon__foot"></div></div>
+      </div>
+    </div>
+    <div class="card__dim"></div>
+  </article>
+  <article class="card flip" style="--i:7" aria-labelledby="p7">
+    <div class="card__in">
+      <div class="card__info">
+        <p class="card__meta"><span class="no">08</span><i></i><span>Product Design / E-Commerce UI</span></p>
+        <h2 id="p7">Molecule Mask — Protective Gear Product UI</h2>
+        <p class="sub">Protective Gear Product UI</p>
+        <p class="desc">A clean product landing page and presentation design highlighting technical specifications, protective features, and ergonomic product presentation.</p>
+        <ul class="tags">
+          <li>Product Design</li>
+          <li>UI/UX</li>
+          <li>Web Design</li>
+          <li>E-Commerce</li>
+        </ul>
+        <a class="live" href="https://www.behance.net/gallery/158671115/Molecule-Mask" target="_blank" rel="noopener noreferrer">View Case Study <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="mon"><div class="mon__body"><div class="mon__screen vid" style="--ar:1280 / 800">
+          <img class="page" src="molecule-mask.webp" alt="Molecule Mask — Protective Gear Product UI" decoding="async" loading="lazy" style="width:100%;height:auto"/>
+        </div></div><div class="mon__neck"></div><div class="mon__foot"></div></div>
+      </div>
+    </div>
+    <div class="card__dim"></div>
+  </article>
   </section>
+  <div class="load-more-wrap" id="loadMoreWrap">
+    <button type="button" class="load-more-btn" id="loadMoreBtn" aria-label="Load more projects">
+      <span>Load More Projects</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </button>
+  </div>
 </main>
 <div class="sfw">
 <footer class="sf" id="contact-footer" aria-labelledby="sfTitle">
@@ -464,56 +583,19 @@ html[data-mode="dark"] .skel::after{background-image:linear-gradient(100deg,#231
 <button class="totop" data-nav="top" aria-label="Back to top"><svg class="ring" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/></svg><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg><span class="lbl">Back to top</span></button>
 
 <script>
-const PROJECTS = [
-  {
-    "no": "01",
-    "kind": "Website UI / UI/UX Design",
-    "title": "Haymaker Hunting — Website UI Design",
-    "sub": "Website UI Design Concept",
-    "desc": "A website UI design concept focused on visual storytelling, clear content hierarchy, intuitive navigation, and a distinctive digital experience. The design brings together structured layouts, strong imagery, and responsive interface thinking.",
-    "tags": ["Website UI", "UI/UX Design", "Web Design", "Visual Design"],
-    "url": "https://www.behance.net/gallery/190432477/Haymaker-Hunting-Website",
-    "shot": "haymaker-hunting.webp"
-  },
-  {
-    "no": "02",
-    "kind": "Travel Website / UI/UX Design",
-    "title": "Travels Company — Travel Website UI/UX",
-    "sub": "Travel Website UI/UX Concept",
-    "desc": "A travel-focused website design concept created to present destinations, travel experiences, and service information through a visually engaging interface. The design emphasizes intuitive navigation, attractive imagery, and accessible content presentation.",
-    "tags": ["Travel Website", "UI Design", "UX Design", "Web Design"],
-    "url": "https://www.behance.net/gallery/186206559/Travels-Company",
-    "shot": "travels-company.webp"
-  },
-  {
-    "no": "03",
-    "kind": "Food Website / Landing Page",
-    "title": "Food Website — Modern Food UI Design",
-    "sub": "Modern Food UI Design Concept",
-    "desc": "A modern food website interface concept combining appetizing imagery, organized content sections, and clear navigation. The project focuses on visual hierarchy, brand presentation, and an engaging user experience.",
-    "tags": ["Food Website", "UI/UX", "Landing Page", "Figma"],
-    "url": "https://www.behance.net/gallery/247387465/FoodWebsite",
-    "shot": "food-website.webp"
-  },
-  {
-    "no": "04",
-    "kind": "Fitness Website / UI Design",
-    "title": "Level 5 Fitness — Fitness Website Design",
-    "sub": "Fitness Website Design Concept",
-    "desc": "A fitness-oriented website interface designed around energetic visuals, strong typography, and accessible content organization. The design presents fitness services and brand information through a modern, structured layout.",
-    "tags": ["Fitness Website", "UI Design", "Web Design", "Visual Identity"],
-    "url": "https://www.behance.net/gallery/190252611/Level-5-Fitness",
-    "shot": "level-5-fitness.webp"
-  }
-];
+const PROJECTS = window.UIUX_PROJECTS;
 const ARROW = '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const stack = document.getElementById('stack');
-if (!stack.firstElementChild) stack.innerHTML = PROJECTS.map((p, i) => `
-  <article class="card${i % 2 ? ' flip' : ''}" style="--i:${i}" aria-labelledby="p${i}">
+
+function renderCardHtml(p, i) {
+  const isFlip = i % 2 !== 0;
+  const stickyI = i % 8;
+  return `
+  <article class="card${isFlip ? ' flip' : ''}" style="--i:${stickyI}" aria-labelledby="p${i}">
     <div class="card__in">
       <div class="card__info">
-        <p class="card__meta"><span>${esc(p.kind)}</span></p>
+        <p class="card__meta"><span class="no">${esc(p.no)}</span><i></i><span>${esc(p.kind)}</span></p>
         <h2 id="p${i}">${esc(p.title)}</h2>
         <p class="sub">${esc(p.sub)}</p>
         <p class="desc">${esc(p.desc)}</p>
@@ -521,43 +603,51 @@ if (!stack.firstElementChild) stack.innerHTML = PROJECTS.map((p, i) => `
         ${p.url ? `<a class="live" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">View Case Study ${ARROW}</a>` : `<span class="note">${esc(p.note || 'Screen recording of the build')}</span>`}
       </div>
       <div class="stage" aria-hidden="true">
-        <div class="mon"><div class="mon__body"><div class="mon__screen${p.ar ? ' vid' : ''}"${p.ar ? ` style="--ar:${p.ar}"` : ''}>
+        <div class="mon"><div class="mon__body"><div class="mon__screen vid" style="--ar:1280 / 800">
           ${p.video ? `<video muted loop playsinline preload="metadata" poster="${p.poster}" src="${p.video}" style="background:${p.bg || '#000'};object-fit:${p.fit || 'contain'}"></video>`
-                    : `<img class="page" src="${p.shot}" alt="${esc(p.title)}: full-page screenshot" decoding="async" loading="${i < 1 ? 'eager' : 'lazy'}">`}
+                    : `<img class="page" src="${p.shot}" alt="${esc(p.title)}" decoding="async" loading="${i < 1 ? 'eager' : 'lazy'}" style="width:100%;height:auto">`}
         </div></div><div class="mon__neck"></div><div class="mon__foot"></div></div>
       </div>
     </div>
     <div class="card__dim"></div>
-  </article>`).join('');
+  </article>`;
+}
 
-const cards = [...stack.querySelectorAll('.card')];
-// a recording's screen takes the recording's own shape, so nothing is cropped or letterboxed
-cards.forEach(c => { const v = c.querySelector('video'); if (!v) return; const scr = v.parentElement; scr.classList.add('vid');
-  const set = () => { if (v.videoWidth) scr.style.setProperty('--ar', v.videoWidth + ' / ' + v.videoHeight); };
-  if (v.readyState >= 1) set(); else v.addEventListener('loadedmetadata', set, { once: true }); });
-// each live page scrolls itself top to bottom and back on its screen
+// Initial populate if empty
+if (!stack.firstElementChild) {
+  stack.innerHTML = PROJECTS.slice(0, 8).map(renderCardHtml).join('');
+}
+
+let cards = [...stack.querySelectorAll('.card')];
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-// inside the home page the room is loaded early, out of sight: nothing plays until you have walked in and it has faded up
 window.__live = !document.documentElement.classList.contains('embed');
 window.__restartAll = () => {};
-const SPEED = 230, REST = 1100;           // screen pixels a second, pause at each end (ms)
-const shots = cards.map(c => {
-  const img = c.querySelector('img.page'), scr = c.querySelector('.mon__screen'); if (!img) return null;
+const SPEED = 230, REST = 1100;
+
+let shots = [];
+function setupShot(c) {
+  const img = c.querySelector('img.page'), scr = c.querySelector('.mon__screen');
+  if (!img) return null;
   const s = { c, img, scr, pos: 0, dist: 0, dir: 1, wait: REST, held: false };
   const measure = () => { s.dist = Math.max(0, img.offsetHeight - scr.clientHeight); s.pos = Math.min(s.pos, s.dist); paint(s); };
   if (img.complete && img.naturalWidth) measure(); else img.addEventListener('load', measure, { once: true });
   s.measure = measure;
   return s;
-}).filter(Boolean);
+}
+
 function paint(s){ s.img.style.transform = `translate3d(0,${-s.pos.toFixed(1)}px,0)`; }
 addEventListener('resize', () => shots.forEach(s => s.measure()));
-// once a screen has been completely out of sight (scrolled away, or fully covered by the card stacked over it),
-// it starts again from the top of its page the next time it shows
-const screens = cards.map(c => ({ c, scr: c.querySelector('.mon__screen'), hidden: true, s: shots.find(x => x.c === c), v: c.querySelector('video') }));
+
+let screens = [];
+function setupScreen(c) {
+  return { c, scr: c.querySelector('.mon__screen'), hidden: true, s: shots.find(x => x.c === c), v: c.querySelector('video') };
+}
+
 function restart(o){
   if (o.s){ o.s.pos = 0; o.s.dir = 1; o.s.wait = REST; paint(o.s); }
   if (o.v){ try { o.v.currentTime = 0; } catch (err) {} }
 }
+
 function checkHidden(){
   screens.forEach((o, i) => {
     const r = o.scr.getBoundingClientRect();
@@ -569,8 +659,11 @@ function checkHidden(){
     if (o.s) o.s.covered = hidden;
   });
 }
+
 window.__restartAll = () => { screens.forEach(o => { restart(o); if (o.v) o.v.pause(); }); };
-addEventListener('scroll', checkHidden, { passive: true }); addEventListener('resize', checkHidden);
+addEventListener('scroll', checkHidden, { passive: true });
+addEventListener('resize', checkHidden);
+
 let lastT = 0;
 function run(t){
   if (!window.__live){ lastT = t; requestAnimationFrame(run); return; }
@@ -579,7 +672,7 @@ function run(t){
     if (s.held || s.covered || !s.c.classList.contains('on') || !s.dist) continue;
     if (s.wait > 0){ s.wait -= dt; continue; }
     const left = s.dir > 0 ? s.dist - s.pos : s.pos;
-    const ease = Math.min(1, .3 + left / 160) * Math.min(1, .35 + (s.dist - left) / 160);   // eases in and out at each end
+    const ease = Math.min(1, .3 + left / 160) * Math.min(1, .35 + (s.dist - left) / 160);
     s.pos += s.dir * SPEED * ease * dt / 1000;
     if (s.pos >= s.dist){ s.pos = s.dist; s.dir = -1; s.wait = REST; }
     else if (s.pos <= 0){ s.pos = 0; s.dir = 1; s.wait = REST; }
@@ -588,15 +681,13 @@ function run(t){
   requestAnimationFrame(run);
 }
 requestAnimationFrame(run);
-checkHidden();
-// play only what's on screen
+
 const io = new IntersectionObserver(es => es.forEach(e => {
   const c = e.target; c.classList.toggle('on', e.isIntersecting);
   if (e.isIntersecting) c.classList.add('seen');
   const v = c.querySelector('video'); if (v){ if (e.isIntersecting && window.__live) v.play().catch(() => {}); else v.pause(); }
 }), { threshold: .25 });
-cards.forEach(c => io.observe(c));
-// stacking: as the next card slides over, the one beneath settles back a little
+
 let ticking = false;
 function stackFx(){
   ticking = false;
@@ -604,10 +695,65 @@ function stackFx(){
     const next = cards[i + 1]; let p = 0;
     if (next){ const top = parseFloat(getComputedStyle(c).top), h = c.offsetHeight; p = Math.min(1, Math.max(0, (top + h - next.getBoundingClientRect().top) / h)); }
     c.style.transform = p ? `scale(${(1 - p * .06).toFixed(4)})` : '';
-    c.lastElementChild.style.opacity = (p * .28).toFixed(3);
+    if (c.lastElementChild && c.lastElementChild.classList.contains('card__dim')) {
+      c.lastElementChild.style.opacity = (p * .28).toFixed(3);
+    }
   });
 }
+
+function initCardElements(cardEls) {
+  cardEls.forEach(c => {
+    const v = c.querySelector('video');
+    if (v) {
+      const scr = v.parentElement; scr.classList.add('vid');
+      const set = () => { if (v.videoWidth) scr.style.setProperty('--ar', v.videoWidth + ' / ' + v.videoHeight); };
+      if (v.readyState >= 1) set(); else v.addEventListener('loadedmetadata', set, { once: true });
+    }
+    const s = setupShot(c);
+    if (s) shots.push(s);
+    screens.push(setupScreen(c));
+    io.observe(c);
+  });
+}
+
+initCardElements(cards);
+checkHidden();
 if (!reduced){ addEventListener('scroll', () => { if (!ticking){ ticking = true; requestAnimationFrame(stackFx); } }, { passive: true }); stackFx(); }
+
+// ---------- Load More Functionality ----------
+const BATCH_SIZE = 8;
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const loadMoreWrap = document.getElementById('loadMoreWrap');
+
+function updateLoadMoreState() {
+  if (!loadMoreWrap) return;
+  const currentCount = stack.querySelectorAll('.card').length;
+  if (currentCount >= PROJECTS.length) {
+    loadMoreWrap.style.display = 'none';
+  } else {
+    loadMoreWrap.style.display = 'flex';
+  }
+}
+
+function loadMoreProjects() {
+  const currentCount = stack.querySelectorAll('.card').length;
+  if (currentCount >= PROJECTS.length) return;
+  const nextProjects = PROJECTS.slice(currentCount, currentCount + BATCH_SIZE);
+  const temp = document.createElement('div');
+  temp.innerHTML = nextProjects.map((p, idx) => renderCardHtml(p, currentCount + idx)).join('');
+  const newCards = [...temp.children];
+  newCards.forEach(card => stack.appendChild(card));
+  cards = [...stack.querySelectorAll('.card')];
+  initCardElements(newCards);
+  checkHidden();
+  stackFx();
+  updateLoadMoreState();
+}
+
+if (loadMoreBtn) {
+  loadMoreBtn.addEventListener('click', loadMoreProjects);
+}
+updateLoadMoreState();
 </script>
 <script>
 (() => {
