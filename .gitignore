@@ -1,0 +1,26 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Node & dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs & temp files
+*.log
+*.tmp
+*.temp
+.edge_*
+edge_temp_*
+
+# Backup folders
+*.backup*
+*.bak
+
+# Build / host metadata
+.netlify
