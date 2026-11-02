@@ -463,7 +463,7 @@ html[data-mode="dark"] .story__amb i:nth-child(3){--c1:122,134,112;--c2:60,82,12
 html[data-mode="dark"] .story__amb i:nth-child(4){--c1:74,53,64;--c2:164,85,44}
 html[data-mode="dark"] .story__amb i:nth-child(5){--c1:214,178,110;--c2:107,92,92}
 .story[data-ch="0"] .story__amb i:nth-child(1),.story[data-ch="1"] .story__amb i:nth-child(2),.story[data-ch="2"] .story__amb i:nth-child(3),
-.story[data-ch="3"] .story__amb i:nth-child(4),.story[data-ch="4"] .story__amb i:nth-child(5){opacity:1;animation-play-state:running}
+.story[data-ch="3"] .story__amb i:nth-child(4){opacity:1;animation-play-state:running}
 @keyframes ambDrift{from{transform:translate3d(-2%,-1.5%,0) scale(1)}to{transform:translate3d(2.5%,2%,0) scale(1.06)}}
 html.lite .story__amb i{animation:none}
 @media (prefers-reduced-motion:reduce){.story__amb i{animation:none;transition:none}}
@@ -1233,8 +1233,8 @@ if(m<=2||c<=2||s)document.documentElement.classList.add('lite');})();
     </div>
   </section>
 
-  <section id="about" class="story" aria-labelledby="storyTitle" style="--n:5">
-    <div class="story__amb" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  <section id="about" class="story" aria-labelledby="storyTitle" style="--n:4">
+    <div class="story__amb" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
     <div class="story__track">
       <div class="story__pin">
         <div class="shell story__stage">
@@ -1243,45 +1243,55 @@ if(m<=2||c<=2||s)document.documentElement.classList.add('lite');})();
             <p class="eyebrow">My story</p>
             <h2 class="story__h" id="storyTitle">Let's go back in time.</h2>
             <div class="story__yr" aria-hidden="true"><span class="dg"><span class="dg__c"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i></span></span><span class="dg"><span class="dg__c"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i></span></span><span class="dg"><span class="dg__c"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i></span></span><span class="dg"><span class="dg__c"><i>0</i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i></span></span></div>
-            <p class="story__when" aria-hidden="true">2025 — Present</p>
+            <p class="story__when" aria-hidden="true">CURRENT</p>
             <div class="story__meter" aria-hidden="true">
               <svg aria-hidden="true" focusable="false" class="story__rw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 7v5l3 2"/></svg>
-              <span class="story__count">01</span><span class="story__of">/ 05</span>
+              <span class="story__count">01</span><span class="story__of">/ 04</span>
               <i class="story__bar"><b></b></i>
             </div>
           </div>
           <div class="story__line">
             <span class="story__rail" aria-hidden="true"></span><span class="story__ttrack" aria-hidden="true"><span class="story__tail"></span></span><span class="story__dtrack" aria-hidden="true"><span class="story__dot"></span></span>
             <ol class="story__list">
-          <li class="ch ch--now" data-y="2025" data-when="2025 — Present">
-            <p class="ch__date">2025 — Present</p>
-            <h3 class="ch__t">AI Automation &amp; Solutions Builder</h3>
-            <p class="ch__org">Tech With Salman · Karachi, Pakistan</p>
-            <ul class="ch__b"><li>Creating practical AI-powered workflows, automated content systems, API webhooks and integrations.</li><li>Developing modern software using AI-assisted coding tools, OpenAI and Gemini APIs, and n8n automations.</li></ul>
+          <li class="ch ch--now" data-y="2026" data-when="CURRENT">
+            <p class="ch__date">CURRENT</p>
+            <h3 class="ch__t">Graphic Designer</h3>
+            <p class="ch__org">ASTRIK · Karachi, Pakistan</p>
+            <ul class="ch__b">
+              <li>Design engaging social media graphics, marketing creatives, and branded visual content.</li>
+              <li>Create and edit reels and short-form videos for digital campaigns.</li>
+              <li>Develop consistent visual assets aligned with brand identities and marketing objectives.</li>
+            </ul>
           </li>
-          <li class="ch" data-y="2025" data-when="2025 — Present">
-            <p class="ch__date">2025 — Present</p>
-            <h3 class="ch__t">Custom Software &amp; SaaS Development</h3>
-            <p class="ch__org">Web Apps &amp; SaaS Projects</p>
-            <ul class="ch__b"><li>Developing custom subscription platforms, SaaS dashboards, user account portals, and data architectures.</li><li>Building full-stack web applications using Next.js, Node.js, PostgreSQL, Prisma, and RESTful APIs.</li></ul>
-          </li>
-          <li class="ch" data-y="2024" data-when="2024 — Present">
-            <p class="ch__date">2024 — Present</p>
-            <h3 class="ch__t">WordPress Developer</h3>
-            <p class="ch__org">Business Websites &amp; Landing Pages</p>
-            <ul class="ch__b"><li>Building responsive, editable WordPress websites with custom layouts, forms, and performance-focused experiences.</li><li>Crafting conversion-optimized business landing pages and editable content structures for client teams.</li></ul>
-          </li>
-          <li class="ch" data-y="2024" data-when="2024 — Present">
-            <p class="ch__date">2024 — Present</p>
+          <li class="ch" data-y="2024" data-when="2024 — PRESENT">
+            <p class="ch__date">2024 — PRESENT</p>
             <h3 class="ch__t">UI/UX Designer</h3>
-            <p class="ch__org">Digital Product &amp; Web Design</p>
-            <ul class="ch__b"><li>Designing responsive user interfaces, user flows, wireframes, prototypes, dashboards, and reusable design systems in Figma.</li><li>Turning product requirements into clean, user-friendly digital journeys and design-to-code components.</li></ul>
+            <p class="ch__org">LEGENDESK · Karachi, Pakistan</p>
+            <ul class="ch__b">
+              <li>Design scalable user interfaces and improve usability across digital products.</li>
+              <li>Lead research, wireframing, interactive prototyping, and interface mockups.</li>
+              <li>Collaborate with teams and mentor junior designers to deliver user-centered experiences.</li>
+            </ul>
           </li>
-          <li class="ch" data-y="2023" data-when="2023 — 2024">
-            <p class="ch__date">2023 — 2024</p>
-            <h3 class="ch__t">Graphic Designer &amp; Creative Media</h3>
-            <p class="ch__org">Visual Branding &amp; Digital Marketing</p>
-            <ul class="ch__b"><li>Designed brand visual identities, marketing materials, social media creatives, and digital promotional assets.</li><li>Created multi-slide carousel graphics, presentation decks, and vector illustrations for growing brands.</li></ul>
+          <li class="ch" data-y="2020" data-when="2020 — 2024">
+            <p class="ch__date">2020 — 2024</p>
+            <h3 class="ch__t">UI/UX Designer</h3>
+            <p class="ch__org">OLIVE DIGITAL · Karachi, Pakistan</p>
+            <ul class="ch__b">
+              <li>Led end-to-end UI/UX design projects for websites and mobile applications.</li>
+              <li>Created responsive layouts, user journeys, and high-fidelity Figma prototypes.</li>
+              <li>Conducted user research and worked with development teams to deliver intuitive digital experiences.</li>
+            </ul>
+          </li>
+          <li class="ch" data-y="2019" data-when="2019 — 2020">
+            <p class="ch__date">2019 — 2020</p>
+            <h3 class="ch__t">UI/UX Designer</h3>
+            <p class="ch__org">UNLIMITED DESIGNER · Karachi, Pakistan</p>
+            <ul class="ch__b">
+              <li>Designed intuitive digital interfaces, wireframes, and interactive mockups.</li>
+              <li>Developed user flows and interface layouts focused on usability.</li>
+              <li>Applied design thinking and user-centered principles to early-stage digital projects.</li>
+            </ul>
           </li>
             </ol>
           </div>
