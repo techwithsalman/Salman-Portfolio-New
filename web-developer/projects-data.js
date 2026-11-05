@@ -2,6 +2,51 @@
 window.WEB_PROJECTS = [
   {
     "no": "01",
+    "kind": "Portfolio Website / Web Development",
+    "title": "Salman Hridoy Portfolio",
+    "sub": "Portfolio Website / Web Development",
+    "desc": "Salman Khan is a Senior UI/UX and Graphic Designer based in Karachi, Pakistan. 5+ years of experience designing intuitive web & mobile interfaces, impactful brand visuals, and creative digital content.",
+    "tags": [
+      "Portfolio Website",
+      "Web Development",
+      "UI/UX Design",
+      "Creative Direction"
+    ],
+    "url": "https://salman-hridoy-portfolio.netlify.app/",
+    "shot": "salman-hridoy-portfolio.webp"
+  },
+  {
+    "no": "02",
+    "kind": "Brand Identity / Portfolio Website",
+    "title": "Salman Brand Portfolio",
+    "sub": "Brand Identity / Portfolio Website",
+    "desc": "Explore the portfolio of Salman Khan, a Senior UI/UX and Graphic Designer specializing in digital experiences, branding, web design, and creative visual solutions.",
+    "tags": [
+      "Portfolio Website",
+      "Brand Identity",
+      "Web Design",
+      "UI/UX"
+    ],
+    "url": "https://salman-brand-portfolio.netlify.app/",
+    "shot": "salman-brand-portfolio.webp"
+  },
+  {
+    "no": "03",
+    "kind": "Creative Portfolio / Web Development",
+    "title": "Salman Furqan Style Portfolio",
+    "sub": "Creative Portfolio / Web Development",
+    "desc": "Explore the portfolio of Salman Khan, a Karachi-based Senior UI/UX Designer, Graphic Designer, and Developer specializing in modern websites, digital products, brand identities, and creative digital experiences.",
+    "tags": [
+      "Creative Portfolio",
+      "Web Development",
+      "UI/UX Design",
+      "Digital Products"
+    ],
+    "url": "https://salman-furqan-style-portfolio.netlify.app/",
+    "shot": "salman-furqan-style-portfolio.webp"
+  },
+  {
+    "no": "04",
     "kind": "Web Development / SaaS Platform",
     "title": "PostNexa — Social Media Management Platform",
     "sub": "Web Development / SaaS Platform",
@@ -16,7 +61,7 @@ window.WEB_PROJECTS = [
     "shot": "postnexa.webp"
   },
   {
-    "no": "02",
+    "no": "05",
     "kind": "Web Development / Online Utilities",
     "title": "ToolHubPro — Free Online Tools Platform",
     "sub": "Web Development / Online Utilities",
@@ -31,7 +76,7 @@ window.WEB_PROJECTS = [
     "shot": "toolhubpro.webp"
   },
   {
-    "no": "03",
+    "no": "06",
     "kind": "Web Development / AI Resource Platform",
     "title": "Prompt Library — AI Creative Prompts",
     "sub": "Web Development / AI Resource Platform",
@@ -46,7 +91,7 @@ window.WEB_PROJECTS = [
     "shot": "promptlibrary.webp"
   },
   {
-    "no": "04",
+    "no": "07",
     "kind": "Portfolio Website / Web Development",
     "title": "Tech With Salman — Personal Portfolio & Digital Solutions",
     "sub": "Portfolio Website / Web Development",
@@ -61,7 +106,7 @@ window.WEB_PROJECTS = [
     "shot": "techwithsalman.webp"
   },
   {
-    "no": "05",
+    "no": "08",
     "kind": "Web Design / Wix Studio",
     "title": "Salman Khan — Creative Portfolio Website",
     "sub": "Web Design / Wix Studio",

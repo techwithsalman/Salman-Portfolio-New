@@ -2603,13 +2603,15 @@ window.toggleMode = toggleMode;
 const loader = $('#loader');
 // back from a door's page (#works): skip the intro and stand in front of the doors again
 // (#about and #contact come from the links in a room's navbar and footer)
-if (['#works', '#about', '#contact'].includes(location.hash)){
+const isWorkRoute = location.hash === '#works' || /(^|\/)work\/?$/.test(location.pathname);
+const isAboutRoute = location.hash === '#about' || /(^|\/)my-story\/?$/.test(location.pathname);
+if (['#works', '#about', '#contact'].includes(location.hash) || isWorkRoute || isAboutRoute){
   loader.remove();
   document.body.classList.add('ready');
   const wantContact = location.hash === '#contact';
   requestAnimationFrame(() => {
     if (wantContact) setTimeout(() => openModal(), 400);
-    const el = $(location.hash === '#about' ? '#about' : '#works');
+    const el = (location.hash === '#about' || isAboutRoute) ? $('#about') : $('#works');
     if (el) window.scrollTo(0, el.getBoundingClientRect().top + pageYOffset);
     dispatchEvent(new Event('intro:ready'));
   });
@@ -2666,7 +2668,9 @@ if (['#works', '#about', '#contact'].includes(location.hash)){
     cur = name;
     try { history.replaceState(history.state, '', dir + ROUTE[name]); } catch (e) {}
   };
-  const first = location.hash === '#about' ? 'about' : location.hash === '#works' ? 'works' : 'home';
+  const isWorkClean = location.hash === '#works' || /(^|\/)work\/?$/.test(location.pathname);
+  const isAboutClean = location.hash === '#about' || /(^|\/)my-story\/?$/.test(location.pathname);
+  const first = (location.hash === '#about' || isAboutClean) ? 'about' : (location.hash === '#works' || isWorkClean) ? 'works' : 'home';
   addEventListener('intro:ready', () => {
     set(first);
     const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) set(e.target.id === 'works' ? 'works' : e.target.id === 'about' ? 'about' : 'home'); }),
